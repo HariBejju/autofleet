@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika&family=Tektur&display=swap');
+
+
+.hero{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Signika', sans-serif;
+    background-color:#e0e5e9;
+    
+}
+.left{
+    text-align: left;
+    margin-left: 70px;
+    margin-top: 90px;
+    width: 50%;
+}
+.left h1{
+    line-height: 25px;
+    font-size: 41px;
+}
+
+.left p{
+    font-weight: 100;
+}
+.right img{
+    height: 360px;
+    width: 100%;
+    /* width: 500px; */
+}
+
+.btns{
+    display: flex;
+    
+}
+.demobutton button{
+    background-color: #11A4FF; 
+  color: #FFFFFF; 
+  padding: 3px 10px; 
+  border: none; 
+  border-radius: 5px;
+  cursor: pointer;
+    font-size: 20px;
+    box-shadow: 0 8px 16px rgba(17, 164, 255, 0.2); /* Lower box shadow */
+    font-family: 'Signika', sans-serif;
+   
+}
+.bluebutton{
+    margin-left: 10px;
+}
+
+.bluebutton button{
+    padding: 3px 10px; 
+  background-color: #e0e5e9; 
+  color: black; 
+  border-color: #11A4FF; 
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer; 
+  font-family: 'Signika', sans-serif;
+   
+}
+
+@media  (max-width: 768px) {
+    .hero{
+        height: 400px;
+        display: flex;
+        align-items: center;
+        background-image:url('../images/right.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .right{
+        display: none;
+    }
+    .left{
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        
+    }
+    .btns{
+        justify-content: center;
+    }
+    
+  }
+  @media  (max-width: 426px){
+    .hero{
+        height: 500px;
+    }
+        .left h1{
+            font-size: 25px;
+        }
+        .btns{
+            display: inline-block;
+             }
+        .bluebutton{
+            padding-top: 20px;
+        }  
+  }
